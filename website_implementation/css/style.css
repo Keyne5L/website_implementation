@@ -1,0 +1,409 @@
+/* Homepage */
+body {
+    background-color: rgb(244, 237, 180);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    max-width: 100px;
+    height: 50px;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-left h1 {
+    color: rgb(165, 85, 42);
+    margin: 0 20px;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.search-form {
+    display: flex;
+    margin-right: 20px;
+}
+
+.search-form input {
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+.search-form button {
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.login-link,
+.language-switcher,
+.dark-mode-toggle {
+    margin-left: 10px;
+}
+
+.language-switcher select {
+    padding: 5px;
+}
+
+.dark-mode-toggle {
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: white;
+}
+
+.image-slider {
+    width: 1250px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0; /* Initially hide the image */
+    animation: slide-animation 6s infinite; /* Apply animation effects */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider-container {
+    margin-top: 20px; 
+    margin-bottom: 40px;
+}
+
+/* Animation frames */
+@keyframes slide-animation {
+    0% { opacity: 0; } /* Initially hidden */
+    16.67% { opacity: 1; } /* Show first image */
+    33.33% { opacity: 1; } /* Continue displaying the first image */
+    50% { opacity: 0; } /* Hide first image */
+    66.67% { opacity: 0; } /* Second image hidden */
+    83.33% { opacity: 1; } /* Show second image */
+    100% { opacity: 1; } /* Continue to display the second image */
+}
+
+/* Delayed start of animation */
+.slide:nth-child(2) {
+    animation-delay: 3s; /* The second image is delayed for 3 seconds to start animation */
+}
+
+section {
+    margin-left: 20px;
+}
+
+#Hot-Games h2 {
+    color: #FF6347;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.game-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-image {
+    height: 250px;
+    margin: 0 60px;
+}
+
+#Recent-News h2 {
+    color: #bf47ff;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.news-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.news-image {
+    height: 150px;
+    margin: 0 30px;
+}
+
+#Community-Buzz h2 {
+    color: #6347ff;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.discussion-window {
+    height: 300px;
+    overflow: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.discussion-content {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333333ba;
+}
+
+.comment {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: rgb(248, 233, 131);
+    border-radius: 5px;/* Add rounded borders */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-name {
+    font-weight: bold;
+    color: #666;
+    margin-right: 10px;
+}
+
+/* Chat box */
+.chat-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.chat-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex-grow: 1;
+    max-width: 500px;
+}
+
+.send-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* Hot Games */
+.section-title {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ff6347;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.game-ranking {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game-ranking li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #f4fcd8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 80%;
+}
+
+.rank {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff6347;
+    margin-right: 20px;
+}
+
+.game-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.game-description {
+    font-size: 16px;
+    color: #666;
+}
+
+.comment-section {
+    margin-top: 30px;
+}
+
+#comment-input {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    font-size: 16px;
+    resize: vertical;
+}
+
+/* Recent News */
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.news-item {
+    margin-bottom: 40px;
+}
+
+.news-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.news-subtitle {
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.news-article-image {
+    width: 500px;
+    height: auto;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.news-content {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.divider {
+    border: 0;
+    height: 1px;
+    background-color: #ccc;
+    margin: 40px 0;
+}
+
+/* contact */
+.contact-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.contact-info {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+.feedback-form {
+    text-align: center;
+}
+
+.feedback-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.feedback-form form {
+    display: inline-block;
+    text-align: left;
+}
+
+.feedback-form textarea {
+    width: 400px;
+    height: 150px;
+    padding: 10px;
+    font-size: 16px;
+    resize: none;
+    margin-bottom: 10px;
+}
+
+.feedback-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* pop-up window */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

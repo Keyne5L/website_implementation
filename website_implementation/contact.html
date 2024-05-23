@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PlayNest - A Community for Game Enthusiasts</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-left">
+                <a href="Homepage index.html"><img src="media/gamer.png" alt="PlayNest Logo" class="logo"></a>
+                <h1>PlayNest</h1>
+                <form class="search-form">
+                    <input type="text" placeholder="Search games, news...">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+            <div class="nav-right">
+                <div class="language-switcher">
+                    <select>
+                        <option value="en">English</option>
+                        <option value="zh">中文</option>
+                    </select>
+                </div>
+                <button id="mode-text" onclick="switchMode()" class="dark-mode-toggle">Switch to Dark Mode</button>
+                <div class="nav-links">
+                    <button onclick="window.location.href='#login';" class="login-link">Log In</button>
+                </div>
+            </div>
+        </nav>
+        <script src="js/script.js"></script>
+    </header>
+
+    <main>
+        <section id="contact">
+            <h1 class="contact-title">Contact Us</h1>
+            <div class="contact-info">
+                <p>Our Facebook: PlayNest Team</p>
+                <p>Our Twitter: PlayNest</p>
+                <p>Our Instagram: PlayNest0523</p>
+            </div>
+            <div class="feedback-form">
+                <h2>Leave Feedback</h2>
+                <form id="feedback-form" onsubmit="return handleFeedbackSubmit(event)">
+                    <textarea placeholder="Your feedback..." id="feedback-input"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <div id="feedback-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Thank you for your feedback! It means a lot to us.</p>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

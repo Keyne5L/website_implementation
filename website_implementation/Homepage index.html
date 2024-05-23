@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PlayNest - A Community for Game Enthusiasts</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-left">
+                <a href="Homepage index.html"><img src="media/gamer.png" alt="PlayNest Logo" class="logo"></a>
+                <h1>PlayNest</h1>
+                <form class="search-form">
+                    <input type="text" placeholder="Search games, news...">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+            <div class="nav-right">
+                    <div class="language-switcher">
+                        <select>
+                            <option value="en">English</option>
+                            <option value="zh">中文</option>
+                        </select>
+                    </div>
+                    <button id="mode-text" onclick="switchMode()" class="dark-mode-toggle">Switch to Dark Mode</button>
+                    <div class="nav-links">
+                        <button onclick="window.location.href='#login';" class="login-link">Log In</button>
+                </div>
+            </div>
+        </nav>
+        <script src="js/script.js"></script>
+    </header>    
+    
+    <main>
+        <section id="scrolling-game-info">
+            <div class="slider-container">
+                <div class="image-slider">
+                <img src="media/Monster Hunter wilds.png" alt="Monster Hunter wilds" class="slide">
+                <img src="media/WUKONG.png" alt="WUKONG" class="slide">
+            </div>
+        </section>
+        
+        
+        <section id="Hot-Games">
+            <a href="Hot Games index.html"><h2>Hot Games🔥</h2></a>
+            <div class="game-images">
+                <a href="Hot Games index.html"><img src="media/Game No.1.png" alt="Game No.1" class="game-image"></a>
+                <a href="Hot Games index.html"><img src="media/Game No.2.png" alt="Game No.2" class="game-image"></a>
+                <a href="Hot Games index.html"><img src="media/Game No.3.png" alt="Game No.3" class="game-image"></a>
+            </div>
+        </section>
+        
+        
+        <section id="Recent-News">
+            <a href="Recent News index.html"><h2>Recent News👀</h2></a>
+            <div class="news-images">
+                <a href="Recent News index.html"><img src="media/news1.png" alt="News 1" class="news-image"></a>
+                <a href="Recent News index.html"><img src="media/news2.png" alt="News 2" class="news-image"></a>
+                <!-- Reference from: https://www.pcgamer.com/news/ -->
+            </div>
+        </section>
+    
+        <section id="Community-Buzz">
+            <a href="Community Buzz index.html"><h2>Community Buzz✨</h2></a>
+            <div class="discussion-window">
+                <div class="discussion-content"></div>
+                <div class="comments">
+                    <div class="comment">
+                        <span class="user-name">David:</span>
+                        <p>Hey everyone, I've been playing a new game that's really fun! Anyone else playing it?</p>
+                    </div>
+                    <div class="comment">
+                        <span class="user-name">Johnson:</span>
+                        <p>I'm playing it too! The graphics are really super nice and the plot is very intriguing.</p>
+                    </div>
+                    <div class="comment">
+                        <span class="user-name">Simon:</span>
+                        <p>I found the level design challenging, but once you get through it there's a sense of accomplishment.</p>
+                    </div>
+                    <div class="comment">
+                        <span class="user-name">Vic:</span>
+                        <p>My favourite thing about the game is the music, it's so good! Can anyone share the soundtrack?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="js/script.js"></script>
+        
+        
+</main>
+
+<footer>
+    <h3>Follow Us</h3>
+    <a href="contact.html">Facebook</a> |
+    <a href="contact.html">Twitter</a> |
+    <a href="contact.html">Instagram</a>
+    <p>We will use blockchain technology to protect your account.</p>
+</footer>
